@@ -8,10 +8,10 @@
 
 import UIKit
 
-public public extension UITableViewCell {
+public extension UITableViewCell {
     
     // MARK: - Varialbes
-    static var cellIdentifier: String {
+    public static var cellIdentifier: String {
         return String(describing: self)
     }
     
