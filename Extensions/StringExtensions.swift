@@ -8,11 +8,10 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
     // MARK: - Variables
-    
-    var uppercaseFirst: String {
+    public var uppercaseFirst: String {
         if let firstString = self.first {
             return String(firstString).uppercased() + String(self.dropFirst())
         }
@@ -20,7 +19,7 @@ extension String {
     }
     
     // MARK: - Public Methods
-    func stringByReplacingFirstOccurrenceOfString(target: String, withString replaceString: String) -> String {
+    public func stringByReplacingFirstOccurrenceOfString(target: String, withString replaceString: String) -> String {
         if let range = self.range(of: target) {
             return self.replacingCharacters(in: range, with: replaceString)
         }

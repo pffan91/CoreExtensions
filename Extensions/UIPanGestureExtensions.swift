@@ -8,10 +8,10 @@
 
 import UIKit
 
-extension UIPanGestureRecognizer {
+public extension UIPanGestureRecognizer {
 
     // MARK: - Public Methods
-    func isLeft(theViewYouArePassing: UIView) -> Bool {
+    public func isLeft(theViewYouArePassing: UIView) -> Bool {
         let velocity: CGPoint = self.velocity(in: theViewYouArePassing)
         if velocity.x > 0 {
             return false

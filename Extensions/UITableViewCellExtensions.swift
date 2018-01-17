@@ -8,14 +8,14 @@
 
 import UIKit
 
-extension UITableViewCell {
+public public extension UITableViewCell {
     
     // MARK: - Varialbes
     static var cellIdentifier: String {
         return String(describing: self)
     }
     
-    static var nib: UINib {
+    public static var nib: UINib {
         return UINib(nibName: self.cellIdentifier, bundle: nil)
     }
 }

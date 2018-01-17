@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension Array {
-    mutating func removeObject<U: Equatable>(object: U) -> Bool {
+public extension Array {
+    public mutating func removeObject<U: Equatable>(object: U) -> Bool {
         for (idx, objectToCompare) in self.enumerated() {
             if let to = objectToCompare as? U {
                 if object == to {

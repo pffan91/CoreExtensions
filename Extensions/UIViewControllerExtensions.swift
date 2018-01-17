@@ -8,10 +8,10 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
     // MARK: - Public Methods
-    class func currentViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+    public class func currentViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
         if let navigationController = controller as? UINavigationController {
             return currentViewController(controller: navigationController.visibleViewController)
         }

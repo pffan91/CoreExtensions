@@ -8,8 +8,8 @@
 
 import UIKit
 
-extension CustomStringConvertible {
-    var description: String {
+public extension CustomStringConvertible {
+    public var description: String {
         var description: String = ""
         
         description = "***** \(type(of: self)) - <\( Unmanaged.passUnretained(self as AnyObject).toOpaque())>***** \n"
