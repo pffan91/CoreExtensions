@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import SlideMenuControllerSwift
+import SlideMenuControllerSwift
 
 extension UIApplication {
     
@@ -24,9 +24,9 @@ extension UIApplication {
             return topViewController(presented)
         }
         
-//        if let slide = viewController as? SlideMenuController {
-//            return topViewController(slide.mainViewController)
-//        }
+        if let slide = viewController as? SlideMenuController {
+            return topViewController(slide.mainViewController)
+        }
         return viewController
     }
 }

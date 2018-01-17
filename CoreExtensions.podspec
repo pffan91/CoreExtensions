@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreExtensions'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'CoreExtensions - helpful extensions to use in each project.'
 
 # This description is used to generate tags and improve search results.
@@ -38,4 +38,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
   s.frameworks = 'Foundation'
+  
+  s.dependency 'SlideMenuControllerSwift'
 end
