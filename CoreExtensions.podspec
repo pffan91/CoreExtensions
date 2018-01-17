@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreExtensions'
-  s.version          = '1.0'
-  s.summary          = 'CoreExtensions - helpfull extensions to use in each project.'
+  s.version          = '1.0.1'
+  s.summary          = 'CoreExtensions - helpful extensions to use in each project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-						Helpfull extensions for arrays, enums, view controllers and more
+						Helpful extensions for arrays, enums, view controllers and more.
                        DESC
 
   s.homepage         = 'https://github.com/pffan91/CoreExtensions/'
