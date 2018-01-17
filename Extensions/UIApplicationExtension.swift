@@ -3,7 +3,7 @@
 //  GPUpdate
 //
 //  Created by Vladyslav Semenchenko on 12/27/17.
-//  Copyright © 2017 Motorsport. All rights reserved.
+//  Copyright © 2017 Vladyslav Semenchenko. All rights reserved.
 //
 
 import UIKit
