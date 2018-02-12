@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CoreExtensions'
-  s.version          = '1.0.6'
+  s.version          = '1.0.7'
   s.summary          = 'CoreExtensions - helpful extensions to use in each project.'
 
 # This description is used to generate tags and improve search results.
