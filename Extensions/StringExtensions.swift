@@ -19,6 +19,17 @@ public extension String {
     }
     
     // MARK: - Public Methods
+    public func convertToDictionary() -> [String: Any]? {
+        if let data = self.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
+    }
+    
     public func stringByReplacingFirstOccurrenceOfString(target: String, withString replaceString: String) -> String {
         if let range = self.range(of: target) {
             return self.replacingCharacters(in: range, with: replaceString)
